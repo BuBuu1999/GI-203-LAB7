@@ -18,8 +18,12 @@ public class Airplane : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+        if (Input.GetKey(KeyCode.Space))
+        {
+            rb.AddForce(transform.forward * enginePower);
+        }
     }
     
     
 }
+  
