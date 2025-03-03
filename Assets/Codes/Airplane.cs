@@ -22,6 +22,14 @@ public class Airplane : MonoBehaviour
         {
             rb.AddForce(transform.forward * enginePower);
         }
+
+        float yaw = Input.GetAxis("Horizontal") * yawPower;
+        float pitch = Input.GetAxis("Vertical") * pitchPower;
+        float roll = Input.GetAxis("Roll") * rollPower;
+        
+        rb.AddTorque(transform.up * yaw);
+        rb.AddTorque(transform.right * pitch);
+        rb.AddTorque(transform.forward * roll);
     }
     
     
