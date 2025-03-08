@@ -255,7 +255,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
@@ -304,8 +304,8 @@ MonoBehaviour:
   drag: 0.003
   angularDrag: 0.03
   yawPower: 50
-  pitchPower: 50
-  rollPower: 30
+  pitchPower: 70
+  rollPower: 20
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2d60052f9d7e3f48877cf510326085f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.71
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2d60052f9d7e3f48877cf510326085f, type: 3}
       propertyPath: m_LocalPosition.z
